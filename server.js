@@ -36,7 +36,7 @@ server.get('/api/accounts/:id', (req, res) => {
 })
 
 server.post('/api/accounts', (req, res) => {
-  const newUser = req.body
+  const newAccount = req.body
 
   db.add(newAccount)
   .then(addedAccount => {
